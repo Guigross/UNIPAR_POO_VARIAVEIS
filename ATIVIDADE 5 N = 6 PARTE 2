@@ -1,0 +1,21 @@
+public class ContaBancariaTeste {
+    public static void main(String[] args) {
+        // Criando uma instância da classe ContaBancaria
+        ContaBancaria conta = new ContaBancaria("123456");
+
+        // Depositando dinheiro na conta
+        conta.depositar(1000.0);
+
+        // Consultando saldo
+        System.out.println("Saldo atual: R$ " + conta.consultarSaldo());
+
+        // Sacando dinheiro da conta
+        conta.sacar(500.0);
+
+        // Consultando saldo novamente
+        System.out.println("Saldo atual: R$ " + conta.consultarSaldo());
+
+        // Tentando sacar um valor maior que o saldo
+        conta.sacar(1500.0);
+    }
+}
