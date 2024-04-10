@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Circulo {
+    // Atributos privados
+    private double raio;
+    private String cor;
+
+    // Construtor da classe Circulo
+    public Circulo(double raio, String cor) {
+        this.raio = raio;
+        this.cor = cor;
+    }
+
+    // Método para calcular a área do círculo
+    public double calcularArea() {
+        return Math.PI * Math.pow(raio, 2);
+    }
+
+    // Método para calcular o perímetro do círculo (circunferência)
+    public double calcularPerimetro() {
+        return 2 * Math.PI * raio;
+    }
+
+    // Método para exibir características do círculo
+    public void exibirCaracteristicas() {
+        System.out.println("Raio: " + raio);
+        System.out.println("Cor: " + cor);
+        System.out.println("Área: " + calcularArea());
+        System.out.println("Perímetro: " + calcularPerimetro());
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira o raio e a cor do círculo
+        System.out.print("Digite o raio do círculo: ");
+        double raio = scanner.nextDouble();
+        System.out.print("Digite a cor do círculo: ");
+        String cor = scanner.next();
+
+        // Cria um objeto Circulo utilizando o método construtor
+        Circulo circulo = new Circulo(raio, cor);
+
+        // Exibe as características do círculo criado
+        System.out.println("\nCaracterísticas do Círculo:");
+        circulo.exibirCaracteristicas();
+
+        scanner.close();
+    }
+}
