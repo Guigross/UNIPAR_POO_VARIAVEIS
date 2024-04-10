@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+        // Variáveis de tipos diferentes
+        int numeroInteiro = 10;
+        double numeroDecimal = 3.14;
+        boolean condicao = true;
+        char caractere = 'A';
+        String texto = "Hello, World!";
+        long numeroLongo = 1000000000L;
+        float numeroDecimalMenorPrecisao = 3.14f;
+        byte numeroPequeno = 127;
+        short numeroCurto = 32000;
+        // Exemplo de uso
+        System.out.println("Número inteiro: " + numeroInteiro);
+        System.out.println("Número decimal: " + numeroDecimal);
+        System.out.println("Condição: " + condicao);
+        System.out.println("Caractere: " + caractere);
+        System.out.println("Texto: " + texto);
+        System.out.println("Número longo: " + numeroLongo);
+        System.out.println("Número decimal menor precisão: " + numeroDecimalMenorPrecisao);
+        System.out.println("Número pequeno: " + numeroPequeno);
+        System.out.println("Número curto: " + numeroCurto);
+    }
+}
