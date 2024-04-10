@@ -1,0 +1,24 @@
+public class ProdutoTeste {
+    public static void main(String[] args) {
+        // Criando um produto
+        Produto produto = new Produto(1, "Notebook", 2500.0, 10);
+
+        // Imprimindo os detalhes do produto
+        System.out.println("Detalhes do Produto:");
+        System.out.println("Código: " + produto.getCodigo());
+        System.out.println("Descrição: " + produto.getDescricao());
+        System.out.println("Preço: R$ " + produto.getPreco());
+        System.out.println("Quantidade em Estoque: " + produto.getQuantidadeEmEstoque());
+
+        // Adicionando estoque
+        produto.adicionarEstoque(5);
+        System.out.println("Quantidade em Estoque após adição: " + produto.getQuantidadeEmEstoque());
+
+        // Removendo estoque
+        produto.removerEstoque(3);
+        System.out.println("Quantidade em Estoque após remoção: " + produto.getQuantidadeEmEstoque());
+
+        // Tentando remover mais estoque do que disponível
+        produto.removerEstoque(10);
+    }
+}
