@@ -1,0 +1,40 @@
+public class ControleEstoque {
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        String nomeDoProduto1;
+        String categoriaDoProduto1;
+        double precoUnitarioProduto1;
+        int quantidadeEmEstoqueProduto1;
+        
+        String nomeDoProduto2;
+        String categoriaDoProduto2;
+        double precoUnitarioProduto2;
+        int quantidadeEmEstoqueProduto2;
+        
+        String nomeDoProduto3;
+        String categoriaDoProduto3;
+        double precoUnitarioProduto3;
+        int quantidadeEmEstoqueProduto3;
+        
+        // Exemplo de utilização das variáveis
+        nomeDoProduto1 = "Arroz";
+        categoriaDoProduto1 = "Alimentos";
+        precoUnitarioProduto1 = 10.99;
+        quantidadeEmEstoqueProduto1 = 100;
+        
+        nomeDoProduto2 = "Refrigerante";
+        categoriaDoProduto2 = "Bebidas";
+        precoUnitarioProduto2 = 5.49;
+        quantidadeEmEstoqueProduto2 = 50;
+        
+        nomeDoProduto3 = "Sabonete";
+        categoriaDoProduto3 = "Higiene";
+        precoUnitarioProduto3 = 2.99;
+        quantidadeEmEstoqueProduto3 = 200;
+        
+        // Exemplo de operações futuras com as variáveis
+        // Por exemplo, adicionar ou remover itens do estoque
+        quantidadeEmEstoqueProduto1 -= 10; // Remover 10 unidades de arroz do estoque
+        quantidadeEmEstoqueProduto2 += 20; // Adicionar 20 unidades de refrigerante ao estoque
+    }
+}
