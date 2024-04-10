@@ -1,0 +1,22 @@
+public class ControleEstoque {
+    public static void main(String[] args) {
+        // Declaração e inicialização das variáveis
+        String nomeProduto;
+        double precoProduto;
+        int quantidadeProduto;
+        
+        nomeProduto = "Fone de Ouvido"; // Corrigido para atribuir uma string ao nome do produto
+        precoProduto = 29.99; // Corrigido para usar um número decimal válido
+        quantidadeProduto = 10; // Corrigido para atribuir um número inteiro à quantidade
+        
+        String marcaProduto; // Declaração da variável marcaProduto
+        marcaProduto = "Marca X"; // Inicialização da variável com uma string representando a marca
+        
+        // Exibindo os dados do produto no console
+        System.out.println("Dados do Produto:");
+        System.out.println("Nome: " + nomeProduto);
+        System.out.println("Marca: " + marcaProduto);
+        System.out.println("Preço: $" + precoProduto);
+        System.out.println("Quantidade em estoque: " + quantidadeProduto);
+    }
+}
