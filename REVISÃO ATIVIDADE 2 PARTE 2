@@ -1,0 +1,27 @@
+public class ProdutoTeste {
+    public static void main(String[] args) {
+        // Criando objetos da classe Produto
+        Produto produto1 = new Produto("Notebook", 2500.0, 5);
+        Produto produto2 = new Produto("Smartphone", 1500.0, 10);
+
+        // Exibindo informações dos produtos
+        System.out.println("Produto 1:");
+        produto1.exibirInformacoes();
+
+        System.out.println();
+
+        System.out.println("Produto 2:");
+        produto2.exibirInformacoes();
+
+        // Modificando informações do produto
+        produto1.setPreco(2700.0);
+        produto2.setQuantidadeEmEstoque(8);
+
+        // Exibindo informações dos produtos após modificação
+        System.out.println("\nProduto 1 após modificação:");
+        produto1.exibirInformacoes();
+
+        System.out.println("\nProduto 2 após modificação:");
+        produto2.exibirInformacoes();
+    }
+}
