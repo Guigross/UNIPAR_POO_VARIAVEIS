@@ -1,0 +1,63 @@
+// Definição da classe Carro
+class Carro {
+    // Características
+    String marca;
+    String modelo;
+    int ano;
+    boolean ligado;
+    int velocidade;
+
+    // Método para ligar o carro
+    void ligar() {
+        ligado = true;
+        System.out.println("O carro está ligado.");
+    }
+
+    // Método para desligar o carro
+    void desligar() {
+        ligado = false;
+        System.out.println("O carro está desligado.");
+    }
+
+    // Método para acelerar o carro
+    void acelerar(int aumentoVelocidade) {
+        if (ligado) {
+            velocidade += aumentoVelocidade;
+            System.out.println("O carro acelerou para " + velocidade + " km/h.");
+        } else {
+            System.out.println("Não é possível acelerar, o carro está desligado.");
+        }
+    }
+
+    // Método para reduzir a velocidade do carro
+    void frear(int reducaoVelocidade) {
+        if (ligado) {
+            velocidade -= reducaoVelocidade;
+            if (velocidade < 0) {
+                velocidade = 0;
+            }
+            System.out.println("O carro reduziu para " + velocidade + " km/h.");
+        } else {
+            System.out.println("Não é possível frear, o carro está desligado.");
+        }
+    }
+}
+
+// Definição da classe CarroTeste
+public class CarroTeste {
+    public static void main(String[] args) {
+        // Criando um objeto da classe Carro
+        Carro meuCarro = new Carro();
+
+        // Definindo as características do carro
+        meuCarro.marca = "Toyota";
+        meuCarro.modelo = "Corolla";
+        meuCarro.ano = 2020;
+
+        // Testando os métodos do carro
+        meuCarro.ligar();
+        meuCarro.acelerar(50);
+        meuCarro.frear(20);
+        meuCarro.desligar();
+    }
+}
