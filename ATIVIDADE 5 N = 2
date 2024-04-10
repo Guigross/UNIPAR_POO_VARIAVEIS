@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class PatinhosDaXuxa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicita ao usuário que insira o número inicial de patinhos
+        System.out.println("Digite o número inicial de patinhos:");
+        int n = scanner.nextInt();
+        
+        // Itera de n até 1
+        for (int i = n; i > 0; i--) {
+            // Imprime as linhas correspondentes à quantidade de patinhos na iteração atual
+            System.out.println(i + " patinho" + (i != 1 ? "s" : "") + " foram passear");
+            System.out.println("Além das montanhas");
+            System.out.println("Para brincar");
+            System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+            System.out.println("Mas só " + (i - 1) + " patinho" + ((i - 1) != 1 ? "s" : "") + " voltaram de lá");
+            System.out.println();
+        }
+        
+        // Imprime as últimas linhas quando todos os patinhos voltam
+        System.out.println("A mamãe patinha foi procurar");
+        System.out.println("Além das montanhas");
+        System.out.println("Na beira do mar");
+        System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+        System.out.println("E os " + n + " patinhos voltaram de lá.");
+        
+        scanner.close();
+    }
+}
